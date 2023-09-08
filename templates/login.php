@@ -8,18 +8,18 @@
   </head>
   <body>
     <section class="section">
-      <form action="../private/auth/login.php" method="post" class="form">
+      <form action="../private/auth/login_process.php" method="post" class="form">
         <h1>Login</h1>
 
         <div class="input_login">
           <div class="input">
             <label for="email">Email:</label><br>
-            <input type="email" placeholder="Email" required />
+            <input name="email" type="email" placeholder="Email" required />
           </div>
 
           <div class="input">
             <label for="password">Password:</label><br>
-            <input type="password" placeholder="Password" required />
+            <input name="password" type="password" placeholder="Password" required />
           </div>
         </div>
 
@@ -37,7 +37,7 @@
         </div>
 
         <div>
-          <p>Don't have an account? <a href="register.html">Sign up</a></p>
+          <p>Don't have an account? <a href="./register.php">Sign up</a></p>
         </div>
       </form>
     </section>
